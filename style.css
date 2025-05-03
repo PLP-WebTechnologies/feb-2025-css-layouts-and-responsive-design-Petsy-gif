@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Main Content Area */
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .intro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .feature-item {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Mobile: Stack content vertically */
+  @media (max-width: 600px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+  
+    .feature-items {
+      grid-template-columns: 1fr;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      padding: 10px;
+    }
+  }
+  
+  /* Tablet: 2-column layout */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .content {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .feature-items {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Desktop: 2-column layout for content and 3 items per row in features */
+  @media (min-width: 1025px) {
+    .content {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .feature-items {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
